@@ -1,0 +1,214 @@
+/*清除初始样式*/
+*{
+	padding: 0;
+	margin: 0;
+}
+/*我的订单外包大盒子*/
+#order_box{
+	position: relative;
+	width: 1090px;
+	height: 1020px;
+	padding: 0px 35px;
+	margin: 40px auto;
+}
+/*我的订单左边信息栏*/
+#order_box_left{
+	position: absolute;
+	width: 170px;
+	height: 925px;
+}
+		/*我的订单左边信息栏照片*/
+		#order_box_left>img{
+			width: 125px;
+			height: 125px;
+		}
+		/*信息栏 ul*/
+		#ul_information{
+			width: 100%;
+			height: 100%;
+			margin-top:14px ;
+			margin-left:11px ;
+		}
+		/*信息栏 li*/
+		#ul_information>li{
+			list-style:none;
+			margin:5px 0px;
+			font-size: 14px;
+		}
+		/*信息栏	li 里面的hover事件*/
+		#ul_information>li:hover{
+			cursor: pointer;
+		}
+		/*我的订单选中*/
+		#ul_information_li{
+			font-size: 20px !important;
+			color: #DD2727;
+		}
+		/*信息栏内的span*/
+		#ul_span{
+			font-size: 20px;
+		}
+/*我的订单右边*/
+#order_box_right{
+	position: absolute;
+	width: 950px;
+	height: 925px;
+	left: 205px;
+}
+		/*我的订单h1设置*/
+		#order_box_right>h1{
+			font-family: "微软雅黑";
+			font-size: 20px;
+			color: #333;
+			margin:10px 5px;
+		}	
+		#my_list{
+			width: 980PX;
+			height: 885px;
+			border: 1px solid #CCC;
+		}
+		/*我的订单span*/
+		#my_list_span{
+			width: 100%;
+			height: 35px;
+			border-bottom: 1px solid #b7b7b7;
+			display: block;
+			position: relative;
+		}
+			/*ul li设置*/
+			#my_list_span>ul>li{
+				height: 35px;
+				line-height: 35px;
+				margin-left: 15px;
+				list-style:none;
+				float:left;
+				font-size: 16px;
+				font-family: "微软雅黑";
+				color: #333;
+				cursor: pointer;
+			}
+			#my_list_span>ul>li:nth-of-type(1){
+				font-weight: 600;
+			}
+			#my_list_div{
+				position: absolute;
+				width:100%;
+				height: auto;
+				margin-top: 50px;
+			}
+			#my_list_div>div{
+				border: 1px solid black;
+				display: none;
+				
+			}
+				#my_list_div>div:nth-child(1){
+					display:block;
+				}
+/*底部*/
+		html {
+				width: 100%;
+				height: 100%;
+			}
+			
+			body {
+				width: 100%;
+				height: 100%;
+			}
+			#order_box_bottom {
+				position: relative;
+				top: 100px;
+				padding-top:50px ;
+				background: #EAEAEA;
+			}
+			.floor-one-one {
+				position: relative;
+				width: 100%;
+				height: 210px;
+			}
+			#order_box_bottom .floor-ul-one{
+				width: 1338px;
+				height: 30px;
+				margin:0 auto
+			}
+			.floor-ul-one li{
+				line-height: 30px;
+				list-style: none;
+			}
+			.floor-ul-two li{
+				line-height: 20px;
+				list-style: none;
+			}
+			.floor-ul-san li{
+				line-height: 20px;
+				list-style: none;
+			}
+			.floor-ul-two{
+				width:915px;
+				height: 20px;
+				margin: 0 auto;
+				margin-top:4px;
+			}
+			.floor-ul-san{
+				width:1000px;
+				height:20px;
+				margin: 0 auto;
+				margin-top: 10px;
+			}
+			.floor-ul-si{
+				width: 520px;
+				height: 20px;
+				margin-left: 653px;
+				margin-top: 10px;
+				list-style: none;
+				position: relative;
+				margin: 10px auto;
+			}
+			#floor_one_one span{
+				display: block;
+				color: #a0a0a0;
+				font-size:12px;
+				cursor: pointer;
+				position: relative;
+				text-align: center;
+			}
+			#floor_one_one li{
+				height:100%;
+				float: left;
+				font-size:12px;
+				color: #a0a0a0;
+				margin-left:4px;
+				cursor: pointer;
+				text-align: center;
+				position: relative;
+				padding-left:20px;
+				padding-right:15px;
+			}
+			#floor_one_one li:after{
+				content: " ";
+				width:2px;
+				height:10px;
+				background: #A0A0A0;
+			}
+			.floor-ul-one li:after{
+				position: absolute;
+				top: 11px;
+				left: 0;
+			}
+			.floor-ul-two li:after{
+				position: absolute;
+				top: 6px;
+				left: 0;
+			}
+			.floor-ul-san li:after{
+				position: absolute;
+				top: 6px;
+				left: 0;
+			}
+			.floor-ul-si li:after{
+				position: absolute;
+				top: 4px;
+				left: 0;
+			}
+			#floor_one_one li:nth-of-type(1):after{
+				display: none;
+			}

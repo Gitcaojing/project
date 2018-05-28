@@ -1,0 +1,38 @@
+*{
+    margin:0;
+    padding:0;
+}
+a{
+    text-decoration: none;
+    color:#333;
+}
+.row:before{
+    content:'';
+    display: table;
+}
+.row:after{
+    content: '';
+    display: table;
+    clear: both;
+}
+ul{
+    list-style: none;
+}
+.rp{
+   position: relative;
+}
+.col{
+    color: red;
+    border-color: red !important;
+}
+i,em{
+    font-style:normal;
+}
+.curr{
+
+    background: red;
+    color:#fff;
+}
+.display{
+    display: none;
+}

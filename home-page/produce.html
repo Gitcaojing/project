@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/area.css">
+</head>
+<body>
+<!--头部 star-->
+<div class="index-top">
+    <div class="index-top-one">
+        <div>
+            <div class="index-top-adress">
+                <i>所在城市</i>
+                <span>.</span>
+                <i id="index_adress"></i>
+            </div>
+            <div class="index-top-welcome">
+                <ul>
+                    <li>欢迎您，来到华兴安商城</li>
+                    <li><a href="../login/login.html">登录</a></li>
+                    <li><a href="../register/register.html">注册</a></li>
+                    <li class="index-no">会员中心</li>
+                    <li class="index-no">我的购物</li>
+                    <li class="index-no">我的订单</li>
+                    <li class="index-no">帮助中心</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="index-top-two">
+        <div>
+            <div class="index-top-img">
+                <span><img src="img/produce/logo.jpg" alt="#"></span>
+                <h3>华兴安</h3>
+                <p>HUAANXIN</p>
+            </div>
+            <div class="index-top-search">
+                <span>
+                    <input type="text" id="index-txt"/>
+                    <button>搜索</button>
+                </span>
+                <ul id="index-ul">
+                    <li><a>电视</a></li>
+                    <li><a>冰箱</a></li>
+                    <li><a>电风扇</a></li>
+                    <li><a>电吹风</a></li>
+                    <li><a>太阳能发电机</a></li>
+                </ul>
+                <div>
+                    <ul id="index-ull"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--头部 end-->
+<!--品牌 star-->
+<div class="shop-nav-main">
+    <div class="shop-nav-item">
+        <div class="shop-first">
+            <a href="javascript:">全部商品</a>
+            <i class="shop-arrow">></i>
+        </div>
+        <div class="shop-nav-item rp">
+            <input type="text" placeholder="笔记本电脑">
+            <i class="iconfont sBtn">&#xe60e;</i>
+        </div>
+    </div>
+
+
+    <div class="shop-nav-right row">
+        <span class="total">共&nbsp;
+        <span>122003</span>
+            件相关商品
+        </span>
+    </div>
+    <div class="shop-container">
+        <div class="shop-selector">
+            <div class="shop-brand">
+                <div class="shop-wrap rp" id="shop_brand">
+                    <div class="shop-key">
+                        <span class="b b-brand" id="brand">品牌：</span>
+                    </div>
+                    <div class="value" id="brand_value">
+
+                    </div>
+                    <div class="shop-btn">
+                        <span class="eBtn">确定</span>
+                        <span class="cBtn">取消</span>
+                    </div>
+                    <div class="shop-ext">
+                        <span class="switch-multi">多选<i class="iconfont">&#xe635;</i>
+                        </span>
+                        <span class="switch-more">更多<i class="iconfont">&#xe616;</i>
+                        </span>
+                    </div>
+                </div>
+                <div class="shop-wrap dash">
+                    <div class="shop-key">
+                        <span class="b">电脑整机：</span>
+                    </div>
+                    <div class="value">
+                        <a class="con" href="javascript:" ><span>笔记本</span></a>
+                        <a class="con" href="javascript:" ><span>游戏本</span></a>
+                        <a class="con" href="javascript:" ><span>平板电脑</span></a>
+                        <a class="con" href="javascript:" ><span>笔记本配件</span></a>
+                        <a class="con" href="javascript:" ><span>服务器/工作站</span></a>
+                        <a class="con" href="javascript:" ><span>台式机</span></a>
+                        <a class="con" href="javascript:" ><span>平板电脑配件</span></a>
+                    </div>
+                </div>
+                <div class="shop-wrap dash">
+                    <div class="shop-key">
+                        <span class="b">屏幕尺寸：</span>
+                    </div>
+                    <div class="value" id="size">
+
+                    </div>
+                </div>
+                <div class="shop-wrap dash">
+                    <div class="shop-key">
+                        <span class="b">内存容量：</span>
+                    </div>
+                    <div class="value" id="memory">
+
+                    </div>
+                </div>
+                <div class="shop-wrap">
+                    <div class="shop-key">
+                        <span class="b">高级选项：</span>
+                    </div>
+                    <div class="value">
+                        <a class="con" href="javascript:" ><span class="trig-item">屏幕尺寸<i class="iconfont">&#xe616;</i></span></a>
+                        <a class="con" href="javascript:" ><span class="trig-item">显卡型号<i class="iconfont">&#xe616;</i></span></a>
+                        <a class="con" href="javascript:" ><span class="trig-item">分类<i class="iconfont">&#xe616;</i></span></a>
+                        <a class="con" href="javascript:" ><span class="trig-item">硬盘容量<i class="iconfont">&#xe616;</i></span></a>
+                        <a class="con" href="javascript:" ><span class="trig-item">显卡类型<i class="iconfont">&#xe616;</i></span></a>
+                        <a class="con" href="javascript:" ><span class="trig-item">分辨率<i class="iconfont">&#xe616;</i></span></a>
+                        <a class="con" href="javascript:" ><span class="trig-item">系统<i class="iconfont">&#xe616;</i></span></a>
+                        <a class="con" href="javascript:" ><span class="trig-item">显存容量<i class="iconfont">&#xe616;</i></span></a>
+                        <a class="con" href="javascript:" ><span class="trig-item">其他分类<i class="iconfont">&#xe616;</i></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--品牌 end-->
+
+<!--销售 star-->
+<div class="shop-area">
+    <div class="shop-line row">
+        <div class="f-sort">
+            <a href="javascript:" class="curr"><span class="fs-tit">综合</span><em class="fs-down"><i class="iconfont icon-xiangxiajiantou"></i></em></a>
+            <a href="javascript:" class=""><span class="fs-tit">销量</span><em class="fs-down"><i class="iconfont icon-xiangxiajiantou"></i></em></a>
+            <a href="javascript:" class=""><span class="fs-tit">评论数</span><em class="fs-down"><i class="iconfont icon-xiangxiajiantou"></i></em></a>
+            <a href="javascript:" class=""><span class="fs-tit">新品</span><em class="fs-down"><i class="iconfont icon-xiangxiajiantou"></i></em></a>
+            <a href="javascript:" class=""><span class="fs-tit">价格</span><em class="fs-up rp"><i class="arrow-top"></i><i class="arrow-down"></i></em></a>
+        </div>
+        <div class="shop-price">
+            <div class="f-price">
+                <input type="text" placeholder="￥">
+            </div>
+            <em>-</em>
+            <div class="f-price">
+                <input type="text" placeholder="￥">
+            </div>
+        </div>
+        <div class="shop-paper">
+        <span class="shop-text">
+            <b class="col">1</b>
+            <em>/</em>
+            <i>100</i>
+        </span>
+            <a href="javascript:" class="shop-prev"><</a><a href="javascript:" class="shop-next">></a>
+        </div>
+        <div class="shop-result">
+            共<span>13万+</span>件商品
+        </div>
+    </div>
+    <div class="shop-line row">
+        <ul id="list1">
+            <li id="summary-stock row">
+                <div class="dt">配送至：</div>
+                <div class="dd">
+                    <div id="store-selector">
+                        <div class="text"><div>北京朝阳区三环以内<i class="iconfont">&#xe616;</i></div></div>
+                        <div onclick="$('#store-selector').removeClass('hover')" class="close"><img src="img/produce/close.png" alt="#"></div>
+                    </div>
+                    <div id="store-prompt"><strong></strong></div>
+                </div>
+            </li>
+        </ul>
+        <ul class="send">
+            <li>
+                <input type="checkbox">兴安配送
+            </li>
+            <li>
+                <input type="checkbox">仅显示有货
+            </li>
+            <li>
+                <input type="checkbox">可配送全球
+            </li>
+        </ul>
+        <ul class="sure">
+            <li>
+                <input type="text" placeholder="在结果中搜索"><button>确定</button>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--销售 end-->
+
+<!--商品 star-->
+<div class="shop-list">
+    <ul class="shop-main row com">
+        <li class="p-list">
+            <div class="p-img">
+                <img src="img/produce/2.jpg" alt="#">
+            </div>
+            <div class="p-price">
+                <span><i class="p-small">￥</i>8999.00</span>
+            </div>
+            <div class="p-name">
+                <span>Apple/苹果12英寸1.2GHz处理器英特尔HDGraphics 615 不详 12英寸</span>
+            </div>
+            <div class="p-diss">
+                <span>15万</span><span>+条评论</span>
+            </div>
+            <div class="p-shop">
+                <span>Apple电脑旗舰店<i class="iconfont icon-touxiang"></i></span>
+            </div>
+            <div class="p-icons">
+                <span>自营</span>
+            </div>
+            <div class="p-opearte">
+                <input type="checkbox"><span>对比</span>
+                <i class="iconfont icon-aixin">关注</i>
+                <i class="iconfont icon-icon-- car">加入购物车</i>
+            </div>
+        </li>
+        <li class="p-list">
+            <div class="p-img">
+                <img src="img/produce/3.jpg" alt="#">
+            </div>
+            <div class="p-price">
+                <span><i class="p-small">￥</i>4214.00</span>
+            </div>
+            <div class="p-name">
+                <span>戴尔 成就 13 5000（5370）VOSTRO 13-5370-1525 IPS 防眩光屏</span>
+            </div>
+            <div class="p-diss">
+                <span>10万</span><span>+条评论</span>
+            </div>
+            <div class="p-shop">
+                <span>戴尔电脑旗舰店<i class="iconfont icon-touxiang"></i></span>
+            </div>
+            <div class="p-icons">
+                <span>自营</span>
+            </div>
+            <div class="p-opearte">
+                <input type="checkbox"><span>对比</span>
+                <i class="iconfont icon-aixin">关注</i>
+                <i class="iconfont icon-icon-- car">加入购物车</i>
+            </div>
+        </li>
+        <li class="p-list">
+            <div class="p-img">
+                <img src="img/produce/4.jpg" alt="#">
+            </div>
+            <div class="p-price">
+                <span><i class="p-small">￥</i>2899.00</span>
+            </div>
+            <div class="p-name">
+                <span>23.7mm，高效5小时续航！ThinkPad 翼480新品上市！X&T系列6期免息</span>
+            </div>
+            <div class="p-diss">
+                <span>11万</span><span>+条评论</span>
+            </div>
+            <div class="p-shop">
+                <span>ThinkPad电脑旗舰店<i class="iconfont icon-touxiang"></i></span>
+            </div>
+            <div class="p-icons">
+                <span>自营</span>
+            </div>
+            <div class="p-opearte">
+                <input type="checkbox"><span>对比</span>
+                <i class="iconfont icon-aixin">关注</i>
+                <i class="iconfont icon-icon-- car">加入购物车</i>
+            </div>
+        </li>
+        <li class="p-list">
+            <div class="p-img">
+                <img src="img/produce/5.jpg" alt="#">
+            </div>
+            <div class="p-price">
+                <span><i class="p-small">￥</i>5177.00</span>
+            </div>
+            <div class="p-name">
+                <span>【大屏微边框轻薄本】八代i5和固态SSD疾速启动，满血版MX150 护眼高清IPS屏全面屏旗舰新品首发.</span>
+            </div>
+            <div class="p-diss">
+                <span>12万</span><span>+条评论</span>
+            </div>
+            <div class="p-shop">
+                <span>华为电脑旗舰店<i class="iconfont icon-touxiang"></i></span>
+            </div>
+            <div class="p-icons">
+                <span>自营</span>
+            </div>
+            <div class="p-opearte">
+                <input type="checkbox"><span>对比</span>
+                <i class="iconfont icon-aixin">关注</i>
+                <i class="iconfont icon-icon-- car">加入购物车</i>
+            </div>
+        </li>
+        <li class="p-list">
+            <div class="p-img">
+                <img src="img/produce/6.jpg" alt="#">
+            </div>
+            <div class="p-price">
+                <span><i class="p-small">￥</i>6988.00</span>
+            </div>
+            <div class="p-name">
+                <span>【高配置商务本推荐】8代4核CPU，满血标压MX150！16G内存！i7四核处理器！</span>
+            </div>
+            <div class="p-diss">
+                <span>10万</span><span>+条评论</span>
+            </div>
+            <div class="p-shop">
+                <span>惠普电脑旗舰店<i class="iconfont icon-touxiang"></i></span>
+            </div>
+            <div class="p-icons">
+                <span>自营</span>
+            </div>
+            <div class="p-opearte">
+                <input type="checkbox"><span>对比</span>
+                <i class="iconfont icon-aixin">关注</i>
+                <i class="iconfont icon-icon-- car">加入购物车</i>
+            </div>
+        </li>
+    </ul>
+</div>
+<!--商品 end-->
+
+<!--底部 star-->
+<div class="floor">
+    <div class="floor-four">
+        <ul>
+            <li>
+                <span>优</span>
+                <h3>品质保障</h3>
+                <i>品质护航，购物无忧</i>
+            </li>
+            <li>
+                <span>七</span>
+                <h3>七天无理由退换货</h3>
+                <i>为你提供售后无忧保障</i>
+            </li>
+            <li>
+                <span>特</span>
+                <h3>特色服务体验</h3>
+                <i>为你呈现不一样的服务</i>
+            </li>
+            <li>
+                <span>省</span>
+                <h3>天天特价</h3>
+                <i>天天低价，畅选无忧</i>
+            </li>
+        </ul>
+    </div>
+    <div class="floor-concat">
+        <ul>
+            <li>购物指南</li>
+            <li>免费注册</li>
+            <li>开通支付宝</li>
+            <li>支付宝充值</li>
+        </ul>
+        <ul>
+            <li>购物保障</li>
+            <li>发票保障</li>
+            <li>售后规则</li>
+            <li>缺货赔付</li>
+        </ul>
+        <ul>
+            <li>支付方式</li>
+            <li>快捷支付</li>
+            <li>信用卡</li>
+            <li>余额宝</li>
+            <li>蚂蚁花呗</li>
+            <li>货到付款</li>
+        </ul>
+        <ul>
+            <li>商家服务</li>
+            <li>商家入驻</li>
+            <li>商家中心</li>
+            <li>物流服务</li>
+            <li>运营服务</li>
+            <li>服务帮助</li>
+            <li>联系我们</li>
+        </ul>
+        <div class="QR-code">
+            <i>微信公众号</i>
+            <span><img src="img/produce/QR.png" width="104" height="104"></span>
+        </div>
+    </div>
+    <div id="floor_one_one" class="floor-one-one">
+        <ul class="floor-ul-one">
+        </ul>
+        <ul class="floor-ul-two">
+            <li>京公网安备 123123213213131号</li>
+            <li>京ICP证2511136号</li>
+            <li>互联网信息服务高级资格证编号（京）经营性-2014-2222</li>
+            <li>新出发京零   字第大526323号</li>
+        </ul>
+        <ul class="floor-ul-san">
+            <li>互联网出版社许可证编号新出网证（京）字150号</li>
+            <li>出版物经营许可证</li>
+            <li>网络文化经营许可证京网文[2014]2115-325号</li>
+            <li>违法和不良信息举报电话：4006561155</li>
+        </ul>
+        <ul class="floor-ul-si">
+            <li>Copyright@2008-2017   华兴安版权所有</li>
+            <li>消费者维权热线：4006067733     经营证照</li>
+        </ul>
+        <span class="floor-store">华兴安旗下网站 huaxinan.cn</span>
+    </div>
+</div>
+<!--底部 end-->
+<script src="js/jquery-3.3.1.js"></script>
+<script src="js/common.js"></script>
+<script src="js/location.js"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=A63e90def3d0f5488ab9032056429a0d"></script>
+</body>
+</html>

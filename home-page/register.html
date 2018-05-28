@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/register.css" />
+	</head>
+	<body>
+		<div class="big-box">
+			<div class="top">
+				<div class="top-one">
+					<span></span>
+					<h3>华兴安</h3>
+					<p>HUAANXIN</p>
+				</div>
+				<div class="top-two">
+					<span>欢迎注册</span>
+				</div>
+			</div>
+			<div class="center">
+				<div class="register">
+					<div class='register-top'>
+						 <span>账户注册</span>
+					</div>
+					<div class='register-center'>
+						<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;用户名 :<input type="text" placeholder="您的用户名或登录名"><p id="usep">支持中文、字母、数字、“-”“_”的组合，4-20个字符</p></span>
+						<span>&nbsp;&nbsp;&nbsp;设置密码：<input type="password" placeholder="建议至少使用两种字符组合"><p id="usepas">建议使用字母、数字和符号两种及以上的组合，6-20个字符</p></span>
+						<span>&nbsp;&nbsp;&nbsp;确认密码：<input type="password" placeholder="请再次输入密码"><p id="usepas_teo">请再次输入密码</p></span>
+						<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email：<input type="text" placeholder="请输入您的邮箱地址"><p id="useEmail"></p></span>
+						<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;手机号：<input type="text" placeholder="请输入您的手机号码"><p id="usenumber">完成验证后，你可以用该手机登录和找回密码</p></span>
+						<div class="register-center-div">
+							<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;验证码：<input type="text" placeholder="请输入验证码" id="txt"></span>
+							<span id="code">fsad</span>
+							<p>看不清？点击图片更换验证码</p>
+						</div>
+					</div>
+					<div class='register-floor'>
+						<input type="checkbox" />
+						<i id="nonone">我已阅读并同意<a style="color: #64a1cc;font-style: normal;"><华兴安用户注册协议></a></i>
+						<button>立即注册</button>
+					</div>
+				</div>
+			</div>
+			<div class="floor">
+				<iframe width="100%" height="204px" frameborder="0" scrolling="no" src="floor-one.html"></iframe>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+	<script type="text/javascript">
+		//下面是正则表达式
+		$('button').click(function(){
+			//这个是用户名的
+			var val = $('input').eq(0).val();
+			var usename = /[\u4eoo-\u9fa5a-z0-9A-Z]{4,20}/
+			//
+			//这个是密码的
+			var valTwo = $('input').eq(1).val();
+			var valSan = $('input').eq(2).val()
+			var pas = /.*[a-z0-9A-Z]{6,20}/
+			//
+			//这个是邮箱的
+			var email = /^[\w]+@[a-z0-9A-Z]+(\.[a-zA-Z]{2,4})$/
+			var valFour = $('input').eq(3).val();
+			//
+			//这个是手机的
+			var numbe = /^[1][35789]\d{9}$/
+			var valFive = $('input').eq(4).val();
+			//
+			if(usename.test(val)==false){
+				$('input').eq(0).css("borderColor","red")
+			}else if(pas.test(valTwo)==false){
+				$('input').eq(1).css("borderColor","red")
+			}else if(valSan!=valTwo){
+				$('input').eq(2).next().css({
+					color:"red",
+				    display:"block",
+				})
+			}else if(email.test(valFour)==false){
+				$('input').eq(3).css("borderColor","red")
+			}else if(numbe.test(valFive)==false){
+				$('input').eq(4).css("borderColor","red")
+			}else{
+				    $.post({
+				    url:'php/register.php',
+				      data:{
+					     zh:val,
+					     mm:valTwo,
+					    ema:valFour,
+					    pho:valFive
+				      },
+			     }).done(function(data){
+			     	if(data =='注册成功'){
+			     		window.location = 'login.html'
+			     	}
+			     })
+			}
+		})
+		//
+		//下面是每个input获得焦点失去焦点是的提示
+	     $("input").on('focus',function(){
+	     	$(this).next().css("display","block")
+	     	$('input').css("borderColor","")
+	     })
+	     $("input").on('blur',function(){
+	     	$(this).next().css("display","none")
+	     	$('#nonone').css("display","inline-block")
+	     })
+	    //
+		//下面是写验证码的
+		var code;
+		$('#code').click(function(){
+			createCode();
+		})
+		function createCode(){
+			code = " ";
+			var createLenth = 4;
+			var arr = [0,1,2,3,4,5,6,7,8,9,'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R', 'S','T','U','V','W','X','Y','Z']
+			for(var i = 0;i<createLenth;i++){
+				var index = Math.floor(Math.random()*36);
+				code += arr[index];
+			}
+			$('#code').html(code);
+		}
+		createCode();
+		//
+	</script>
+</html>

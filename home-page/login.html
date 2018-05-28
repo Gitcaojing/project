@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/login.css" />
+	</head>
+	<body>
+		<div class="big-box">
+			<div class="top">
+				<div class="top-one">
+					<span></span>
+					<h3>华兴安</h3>
+					<p>HUAANXIN</p>
+				</div>
+				<div class="top-two">
+					<span>欢迎登录</span>
+				</div>
+			</div>
+			<div class="center">
+				<div class="center-login">
+					<div class="center-login-top">
+						<h1>账号登录</h1>
+					</div>
+					<div class="center-login-center">
+						<div class="center-login-center-one">
+							<span class="sp-one"></span>
+						    <input type="text" placeholder=&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;邮箱/用户名/手机 class="sp-two"/>
+						</div>
+						<div class="center-login-center-one">
+							<span class="sp-san sp-one"></span>
+							<input type="password" placeholder=&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;密码 class="sp-two"/>
+						</div>
+						<div>
+						   <div class="div-code">
+							   <span class="sp-one sp-code"></span>
+							   <input type="text" placeholder=&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;请输入验证码 />
+						   </div>
+						   <div class="div-code-span">
+						   	   <span id="code"></span>
+						   </div>
+						   <p class="div-code-p">看不清？点击图片更换验证码</p>
+						</div>
+						<div class="center-login-center-one">
+							<button>登&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;录</button>
+						</div>
+					</div>
+					<div class="center-login-floor">
+						<div class="floor-one">
+							<span class="floor-one-sp">?</span>
+							<a class="floor-one-a">忘记密码</a>
+						</div>
+						<div class="floor-one floor-two">
+							<span class="floor-one-sp floor-two-sp">></span>
+							<a class="floor-one-a" href="register.html">立即注册</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="floor">
+				<iframe width="100%" height="210px" frameborder="0" scrolling="no" src="floor-one.html"></iframe>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/jquery-3.3.1.js" ></script>
+	<script type="text/javascript">
+		//下面是验证码的
+		var code;
+		$('#code').click(function(){
+			createCode();
+		})
+		function createCode(){
+			code = " ";
+			var createLenth = 4;
+			var arr = [0,1,2,3,4,5,6,7,8,9,'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R', 'S','T','U','V','W','X','Y','Z']
+			for(var i = 0;i<createLenth;i++){
+				var index = Math.floor(Math.random()*36);
+				code += arr[index];
+			}
+			$('#code').html(code);
+		}
+		createCode();
+		//
+		//下面是验证登录的
+		$('button').on('click',function(){
+			var txt = $(":text").val();
+			var pwd = $(":password").val();
+			$.post({
+				url:"php/login.php",
+				data:{
+					account:txt,
+				    pas:pwd
+				},
+				dataType:'json'
+			}).done(function(data){
+				$.each(data,function(v,k){
+					var txt = $(':text').eq(0).val()
+					if(txt==k.username||txt==k.phone||txt==k.email&&$(':password').val()==k.pas){
+						window.location = 'index.html'
+					}
+				})
+			})
+		})
+		//
+	</script>
+</html>

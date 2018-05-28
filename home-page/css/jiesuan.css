@@ -1,0 +1,171 @@
+  *{
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+			.bigbox{
+				width: 1202px;
+				height: auto;
+				margin: 0 auto;
+			}
+			.case{
+				width: 100%;
+				height: 115px;
+				float: left;
+			}
+			.queren{
+				width: 170px;
+				height: 5px;
+				background: #ccc;
+				border-radius: 5px;
+				float: right;
+				margin-top: 20px;
+				position: relative;
+			}
+			.queren>p{
+				width: 30px;
+				height: 30px;
+				border-radius: 15px;
+				background: #CCCCCC;
+				position: absolute;
+				left: -270px;
+				top: -12px;
+				text-align: center;
+				line-height: 30px;
+				color: white;
+				font-size: 18px;
+				z-index: 999;
+			}
+			.er{
+				background: #7abd54;
+			}
+			.san{
+				background: #caecb6;
+			}
+			.yi>p{
+				background: #caecb6;
+			}
+			.er>p{
+				position: absolute;
+				left: 70px;
+				top: -12px;
+				background: #7abd54;
+			}
+			.san>p{
+				position: absolute;
+				left: 405px;
+				top: -12px;
+				
+			}
+			.er span{
+				font-size: 14px;
+				position: absolute;
+				left: 50px;
+				top: 15px;
+			}
+			.yi span{
+				font-size: 14px;
+				position: absolute;
+				left: 60px;
+				top: 15px;
+				
+			}
+			.san span{
+				font-size: 14px;
+				position: absolute;
+				left: 45px;
+				top: 15px;
+			}
+			.case>p{
+				font-size: 24px;
+				padding-top: 82px;
+			}
+			.floor{
+				width: 100%;
+				height: 935px;
+				border: 1px solid #949494;
+				float: left;
+			}
+			.floor .floor-concat{
+				width: 100%;
+				height: 125px;
+				border-bottom: 1px solid #949494;
+			}
+			
+			.floor .floor-concat span:nth-child(2){
+				float: right;
+			}
+			.floor-one-one{
+				width: 100%;
+				float: left;
+			}
+			.floor-ul-one{
+				width: 1100px;
+				height: 1000px;
+				margin: 30px auto;
+			}
+			.pro_buy_details{
+				width: 100%;
+				height: 150px;
+				background: #f7f7f7;
+			}
+			.pro_buy_img{
+				width: 100px;
+				height: 100px;
+				border: 1px solid #cfcfcf;
+				float: left;
+				margin: 25px 25px;
+			}
+			.pro_buy_p{
+				width: 270px;
+				height: 150px;
+				float: left;
+			}
+			.pro_buy_p1{
+				width: 100%;
+				height: 100px;
+				margin: 25px 0;
+			}
+			.pro_buy_money{
+				width: 100px;
+				height: 100%;
+				float: left;
+			}
+			.pro_buy_money .money{
+				font-size: 14px;
+				line-height: 150px;
+				text-align: center;
+			}
+			.pro_buy_p1 .word{
+				font-size: 14px;
+				line-height: 22px;
+			}
+			.pro_buy_p1 .word1{
+				font-size: 14px;
+				padding: 10px 0;
+			}
+			.word2{
+				color: #6679b3;
+			}
+			.word3{
+				color: red;
+			}
+			.zongjia{
+				width: 100%;
+				height: 150px;
+				float: left;
+			}
+			#pro_buy_balance{
+				width: 135px;
+				height: 65px;
+				float: right;
+				background: #E64346;
+				cursor: pointer;
+				text-decoration: none;
+			}
+			#pro_buy_balance p{
+				margin-left: 43px;
+				line-height: 70px;
+				color: white;
+				font-weight: 500;
+			}

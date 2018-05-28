@@ -1,0 +1,251 @@
+*{
+				margin: 0;
+				padding: 0;
+				box-sizing:border-box;
+			}
+			html{
+				width: 100%;
+				height: 100%;
+			}
+			body{
+				width: 100%;
+				height: 100%;
+			}
+			#pro_buy_middle{
+				width: 1202px;
+				position: relative;
+				margin: 0 auto;
+				
+			}
+			#pro_buy_top{
+				width: 100%;
+				height: 45px;
+			}
+			.pro_buy_all{
+				font-size: 18px;
+				font-weight: 600;
+				color: #e4393b;
+				border-bottom: 1px solid #E4393B;
+				display: inline-block;
+				line-height: 45px;
+				float: left;
+			}
+			.pro_buy_all #pro_buy_count{
+				display: inline-block;
+				padding-left: 5px;
+			}
+			.pro_buy_send{
+				font-size: 12px;
+				line-height: 45px;
+				float: right;
+			}
+			#pro_buy_spinner{
+				margin-top: 12px;
+				float: right;
+				margin-left: 5px;
+			}
+			#pro_buy_operation{
+				width: 100%;
+				height: 40px;
+				float: left;
+				background: #f3f3f3;
+			}
+			#pro_buy_Notice{
+				width: 100%;
+				height: 40px;
+				display: inline-block;
+				line-height: 40px;
+			
+			}
+			#pro_buy_Notice .pro_buy_check{
+				font-size: 14px;
+				margin-left: 10px;
+				margin-right: 90px;
+			}
+			#pro_buy_Notice .pro_buy_chec{
+				font-size: 14px;
+				margin-left: 90px;
+			}
+			#pro_buy_Notice .pro_buy_checks{
+				font-size: 14px;
+				margin-left: 450px;
+			}
+			#pro_buy_checkall{
+				margin-left: 10px;
+			}
+			#pro_buy_share{
+				width: 100%;
+				height: auto;
+				margin-top: 30px;
+				border-top: 2px solid #7f7f7f;
+				float: left;
+			}
+			#pro_buy_share .pro_buy_details{
+				width: 100%;
+				height: 150px;
+				border: 1px solid #d4d4d4;
+				
+			}
+			#pro_buy_share .pro_buy_details #pro_buy_che{
+				margin-left: 10px;
+				margin-top: 75px;
+				float: left;
+			}
+			.pro_buy_img{
+				width: 100px;
+				height: 100px;
+				border: 1px solid #cfcfcf;
+				float: left;
+				margin: 25px 25px;
+			}
+			.pro_buy_p{
+				width: 270px;
+				height: 150px;
+				float: left;
+			}
+			.pro_buy_pq{
+				width: 260px;
+				height: 150px;
+				float: left;
+			}
+			.pro_buy_p1{
+				width: 100%;
+				height: 100px;
+				margin: 25px 0;
+			}
+			.pro_buy_p1 .word{
+				font-size: 14px;
+				line-height: 22px;
+			}
+			.pro_buy_p1 .word1{
+				font-size: 14px;
+				padding: 10px 0;
+			}
+			.pro_buy_money{
+				width: 100px;
+				height: 100%;
+				float: left;
+			}
+			.pro_buy_money .money{
+				font-size: 14px;
+				line-height: 150px;
+				text-align: center;
+			}
+			#pro_buy_num{
+				width: 150px;
+				height: 100%;
+				float: left;
+			}
+			.pro_buy_box{
+				width: 98px;
+				height: 26px;
+				
+				margin: 60px auto;
+			}
+			.pro_buy_minus{
+				width: 22px;
+				height: 100%;
+				float: left;
+				border-right: 1px solid #D4D4D4;
+				text-align: center;
+				cursor: pointer;
+			}
+			.pro_buy_plus{
+				width: 22px;
+				height: 100%;
+				float: right;
+				border-left: 1px solid #D4D4D4;
+				text-align: center;
+				cursor: pointer;
+			}
+			.pro_buy_number{
+				font-size: 14px;
+				margin-left: 22px;
+			}
+			.pro_buy_sub{
+				width: 100px;
+				height: 100%;
+				float: left;
+			}
+			.pro_buy_xiao{
+				width: 100%;
+				height: 70px;
+				margin-top: 50px;
+			}
+			.pro_buy_sub .pro_buy_xiao p{
+				font-size: 14px;
+				text-align: center;
+			}
+			.pro_buy_caozuo{
+				width: 147px;
+				height: 100%;
+				float: left;
+			}
+			.pro_buy_caozuo .pro_buy_xiao p{
+				font-size: 14px;
+				margin-left: 45px;
+			}
+			#pro_buy_buy{
+				width: 100%;
+				height: 70px;
+				border: 1px solid #CFCFCF;
+				margin-top: 30px;
+			}
+			#pro_buy_buy #pro_buy_che{
+				margin-left: 10px;
+				margin-top: 30px;
+				float: left;
+			}
+			
+			#pro_buy_buy span{
+				font-size: 14px;
+				line-height: 70px;
+				margin-left: 5px;
+				float: left;
+			}
+			#pro_buy_buy #pro_buy_prefer{
+				margin-left: 360px;
+			}
+			#pro_buy_buy p{
+				font-size: 16px;
+				float: left;
+				margin-right: 10px;
+			}
+			
+			#pro_buy_buy #pro_buy_total{
+				font-size: 18px;
+				color: #E64346;
+				font-weight: 600;
+			}
+			#pro_buy_buy .case{
+				width: 220px;
+				height: 100%;
+				float: right;
+			}
+			#pro_buy_buy #pro_buy_prefernum{
+				color: #E64346;
+			}
+			#pro_buy_buy #pro_buy_balance{
+				width: 135px;
+				height: 100%;
+				float: right;
+				background: #E64346;
+				cursor: pointer;
+				text-decoration: none;
+			}
+			
+			#pro_buy_buy #pro_buy_balance p{
+				margin-left: 43px;
+				line-height: 70px;
+				color: white;
+				font-weight: 500;
+			}
+			.word2{
+				color: #6679b3;
+			}
+			.word3{
+				color: red;
+			}
+			.ipt{
+				width: 100px;
+			}

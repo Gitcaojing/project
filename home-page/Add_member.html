@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>添加会员</title>
+		<link rel="stylesheet" href="css/Add_member.css" type="text/css"/>
+		<script type="text/javascript" src="jQuery/jquery-3.3.1.min.js" ></script>
+		<script type="text/javascript" src="js/Add_member.js" ></script>
+
+	</head>
+	<body>
+	   
+	 	<!--顶部-->
+	 	<div class="index-top">
+				<div class="index-top-one">
+					<div>
+						<div class="index-top-adress">
+							<i>所在城市</i>
+							<span>.</span>
+							<i id="index_adress"></i>
+						</div>
+						<div class="index-top-welcome">
+							<ul>
+								<li>欢迎您，来到华兴安商城</li>
+								<li><a href="login.html">登录</a></li>
+								<li><a href="register.html">注册</a></li>
+								<li class="index-no"><a href="Add_member.html">会员中心</a></li>
+								<li class="index-no"><a href="shopcar.html">我的购物</a></li>
+								<li class="index-no"><a href="finish.html">我的订单</a></li>
+								<li class="index-no">帮助中心</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="index-top-two">
+					<div>
+						<div class="index-top-img">
+							<span><img src="img/logo.jpg"></span>
+					        <h3>华兴安</h3>
+					        <p>HUAANXIN</p>
+						</div>
+						<div class="index-top-search">
+							<span>
+								<input type="text" id="index-txt"/>
+								<button>搜索</button>
+							</span>
+							<ul id="index-ul">
+								<li><a>电视</a></li>
+								<li><a>冰箱</a></li>
+								<li><a>电风扇</a></li>
+								<li><a>电吹风</a></li>
+								<li><a>太阳能发电机</a></li>
+							</ul>
+							<div>
+								<ul id="index-ull"></ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="index-top-bar">
+					<div>
+						<ul class="index-top-bar-ul">
+							<li><a href="produce.html">全部商品分类</a></li>
+							<li><a href="index.html">商城首页</a></li>
+							<li><a>特惠商品</a></li>
+							<li class="index-top-bar-li"><a>爆款商品</a></li>
+							<li class="index-top-bar-li"><a>新品推荐</a></li>
+							<li class="index-top-bar-li"><a>热卖商品</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		<!--会员中心大盒子-->
+		<div id="member_box">
+			<!--会员中心左边信息栏-->
+			<div id="member_box_left">
+				<!--个人信息图片-->
+				<img src='img/Add_member/1.jpg'>
+				<!--信息栏-->
+				<ul id="ul_information">
+					<span id="ul_span">账号管理</span>
+					<li>个人资料修改/查看</li>
+					<li>修改登录密码</li>
+					<li>管理收货地址</li>
+					<li id="ul_information_li">我的订单</li>
+					<li>已完成</li>
+					<li>待收货</li>
+					<li>待付款</li>
+					<li>待评价</li>
+				</ul>
+			</div>
+			<!--会员中心右边个人资料-->
+			<div id="member_box_right">
+				<h1>个人资料</h1>
+				<!--个人资料列表-->
+				<div id="my_list">
+					<span id="my_list_span">
+						<ul>
+							<li id="btn_change1">基本资料</li>
+							<li id="btn_change2">头像照片</li>
+						</ul>
+						<!--详细信息添加-->
+						<div id="infor_add1">
+							<span>亲爱的<i>***********</i>，填写真实的资料，有助于好友找到你哦。</span>
+							<table>
+								<tr>
+									<td>当前头像：</td>
+									<td><img src="img/Add_member/1.jpg"></td>
+								</tr>
+								<tr>
+									<td>昵称：</td>
+									<td><input type="text" class="text" id="add_user"></td>
+								</tr>
+								<tr>
+									<td>真实姓名：</td>
+									<td><input type="text" class="text" id="add_name"></td>
+								</tr>
+								<tr>
+									<td>性别：</td>
+									<td id="radio"><input type="radio" name="sex" value="男">男<input type="radio" name="sex" value="女">女</td>
+								</tr>
+								<tr>
+									<td>居住地：</td>
+									<td><input type="text" id="address"></td>
+								</tr>
+							</table>
+						</div>
+						<div id="infor_add2">
+							<img src="" id="infor_img"/>
+							<input type="file" id="file"/>
+						</div>
+						<!--提交按钮框-->
+						<div id="reset_btn">
+							<button id="add_btns">保存</button>
+						</div>
+					</span>
+				</div>
+			</div>
+		</div>
+		<!--底部-->
+		<div id="order_box_bottom">
+			<div id="floor_one_one" class="floor-one-one">
+				<ul class="floor-ul-one" id="uls"></ul>
+				<ul class="floor-ul-two">
+					<li>京公网安备 123123213213131号</li>
+					<li>京ICP证2511136号</li>
+					<li>互联网信息服务高级资格证编号（京）经营性-2014-2222</li>
+					<li>新出发京零   字第大526323号</li>
+				</ul>
+				<ul class="floor-ul-san">
+					<li>互联网出版社许可证编号新出网证（京）字150号</li>
+					<li>出版物经营许可证</li>
+					<li>网络文化经营许可证京网文[2014]2115-325号</li>
+					<li>违法和不良信息举报电话：4006561155</li>
+				</ul>
+				<ul class="floor-ul-si">
+				    <li>Copyright@2008-2017   华兴安版权所有</li>
+				    <li>消费者维权热线：4006067733     经营证照</li>
+				</ul>
+				<span>华兴安旗下网站    huaxinan.cn</span>
+			</div>
+		</div>
+	</body>
+	
+</html>

@@ -1,0 +1,139 @@
+		*{
+			margin:0;
+			padding: 0;
+			font-family: "微软雅黑";
+		}
+		.assess-center{
+			width: 1170px;
+			height: 810px;
+			margin:0 auto;
+			margin-bottom: 20px;
+		}
+		.assess-center-h2{
+			font-weight: 400;
+			margin-bottom: 20px;
+			margin-left: 5px;
+		}
+		.assess-center-all{
+			width: 1120px;
+			height: 745px;
+			border:1px solid #ccc;
+		}
+		/*ÉÏ°ë²¿·Ö*/
+		.assess-center-all-top{
+			width: 995px;
+			height: 355px;
+			border-bottom: 1px solid #ccc;
+			margin:0 auto;
+		}
+		.assess-center-all-top-left{
+			width: 290px;
+			height: 260px;
+			border:1px solid #ccc;
+			margin: 55px 90px 39px 20px; 
+			text-align: center;
+			position: relative;
+			float: left;
+		}
+		.assess-img{
+			position: absolute;
+			left: 17px;
+			top: 46px;
+		}
+		.assess-center-all-top-right{
+			float: left;
+		}
+		.assess-p1{
+			width: 570px;
+			margin-top: 80px;
+			font-size: 18px;
+			letter-spacing:3px;
+		}
+		.assess-span1{
+			display: block;
+			font-size: 14px;
+			margin-top: 25px;
+		}
+		.assess-ul1{
+			float: left;
+		}
+		.assess-ul1>li{
+			list-style: none;
+			font-size: 14px;
+			margin-top: 30px;
+		}
+		.assess-ul2{
+			float: left;
+			margin-left: 5px;
+		}
+		.assess-ul2>li{
+			list-style: none;
+			margin-top: 22px;
+			margin-left: 8px;
+		}
+		.assess-span2{
+			font-size: 25px;
+		}
+		.assess-i1{
+			font-style: normal;
+			font-size: 18px;
+		}
+		/*ÏÂ°ë²¿·Ö*/
+		.assess-center-all-bottom{
+			width: 995px;
+			height: 394px;
+			margin:0 auto;
+		}
+		.assess-span3{
+			display: block;
+			margin-left: 20px;
+			margin-top: 60px;
+			font-size: 20px;
+			float: left;
+		}
+		.assess-ul3{
+			float: left;
+			margin-top: 57px;
+			margin-left: 25px;
+		}
+		.assess-ul3>li{
+			list-style: none;
+			float: left;
+			margin-left: 10px;
+		}
+		.assess-ul3>li>img{
+			width: 30px;
+			height: 30px;
+			cursor: pointer;
+		}
+		.clear{
+			clear:both;
+		}
+		.assess-span4{
+			display: block;
+			margin-top: 30px;
+			margin-left: 20px;
+			font-size: 20px;
+			float: left;
+		}
+		.assess-txtarea{
+			float: left;
+			width: 435px;
+			height: 135px;
+			margin-top: 30px;
+			margin-left: 35px;
+			border:1px solid #ca3232;
+			resize: none;
+		}
+		.assess-button{
+			width: 120px;
+			height: 40px;
+			border:1px solid #ca3232;
+			border-radius: 3px;
+			background: #ca3232;
+			margin-left: 150px;
+			margin-top: 20px;
+			color: white;
+			font-size: 18px;
+			cursor: pointer;
+		}

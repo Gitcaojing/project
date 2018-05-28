@@ -1,0 +1,105 @@
+ *{
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+			.bigbox{
+				width: 1202px;
+				height: auto;
+				margin: 0 auto;
+			}
+			.case{
+				width: 100%;
+				height: 115px;
+				float: left;
+				background: url(../img/gou.jpg) no-repeat;
+				background-position: 1080px 0;
+			}
+			.case p{
+				font-size: 16px;
+			}
+			.case h2{
+				float: right;
+			}
+			
+			
+			.floor{
+				width: 100%;
+				height: 815px;
+				border: 1px solid #949494;
+				float: left;
+			}
+			.floor .floor-concat{
+				width: 100%;
+				height: 125px;
+				border-bottom: 1px solid #949494;
+			}
+			
+			.floor .floor-concat span:nth-child(2){
+				float: right;
+			}
+			.floor-one-one{
+				width: 100%;
+				float: left;
+			}
+			.floor-ul-one{
+				width: 1100px;
+				height: 1000px;
+				margin: 30px auto;
+			}
+			.pro_buy_details{
+				width: 100%;
+				height: 150px;
+				background: #f7f7f7;
+			}
+			.pro_buy_img{
+				width: 100px;
+				height: 100px;
+				border: 1px solid #cfcfcf;
+				float: left;
+				margin: 25px 25px;
+			}
+			.pro_buy_p{
+				width: 270px;
+				height: 150px;
+				float: left;
+			}
+			.pro_buy_p1{
+				width: 100%;
+				height: 100px;
+				margin: 25px 0;
+			}
+			.pro_buy_money{
+				width: 100px;
+				height: 100%;
+				float: left;
+			}
+			.pro_buy_money .money{
+				font-size: 14px;
+				line-height: 150px;
+				text-align: center;
+			}
+			.pro_buy_p1 .word{
+				font-size: 14px;
+				line-height: 22px;
+			}
+			.pro_buy_p1 .word1{
+				font-size: 14px;
+				padding: 10px 0;
+			}
+			.word2{
+				color: #6679b3;
+			}
+			.word3{
+				color: red;
+			}
+			.zongjia{
+				width: 100%;
+				height: 150px;
+				float: left;
+			}
+			.zongjia p{
+				font-size: 24px;
+				float: right;
+				color: red;
+			}

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/address.css">
+</head>
+<body>
+		<div>
+		    <iframe width="100%" height="180px" scrolling="no" frameborder="0" src="top.html"></iframe>
+	    </div>
+<div>
+	<div class="site">
+		<div class="site-center">
+		<!-- 账号管理 -->
+			<div class="site-center-left">
+				<img src="img/lw/1.jpg" class="site-center-left-img">
+				<ul class="site-center-left-ul">
+					<li><h3 class="site-center-left-h3">账号管理</h3></li>
+					<li>个人资料修改/查看</li>
+					<li>修改登录密码</li>
+					<li>管理收货地址</li>
+					<li><h3 class="site-center-left-h3">我的订单</h3></li>
+					<li>已完成</li>
+					<li>待收货</li>
+					<li>待付款</li>
+					<li>待评价</li>
+				</ul>
+			</div>
+			<!-- 收货地址 -->
+			<div class="site-center-right">
+				<h4>管理收货地址</h4>
+				<div class="site-center-right-all">
+					<div class="site-center-right-all-top">
+						<h5 class="site-center-right-all-h5">收货地址</h5>
+					</div>
+					<div class="site-center-right-add">
+						<table class="site-center-right-add-table">
+							<tr>
+								<td class="site-center-add-td1">新增收货地址</td>
+								<td>下列信息均为必填项</td>
+							</tr>
+							<tr>
+								<td class="site-center-add-td1">所在地区:</td>
+								<td><input type="text" placeholder="请填写您所在的省市区" class="site-center-add-txt" id="site_td2"></td>
+								<td class="site-center-add-td4">您输入的地址有误,请重新输入</td>
+							</tr>
+							<tr>
+								<td class="site-center-add-td1 site-center-add-td2">详细地址:</td>
+								<td><textarea placeholder="建议您如实填写详细收货地址,例如街道名称,门牌号码楼层和房间号等信息" class="site-center-add-txt1"  id="site_td3"></textarea></td>
+								<td class="site-center-add-td5">地址不能为空且不能有特殊符号</td>
+							</tr>
+							<tr>
+								<td class="site-center-add-td1">收货人姓名:</td>
+								<td><input type="text" placeholder="长度不超过25字符" class="site-center-add-txt"  id="site_td4"></td>
+								<td class="site-center-add-td6">请输入正确的姓名</td>
+							</tr>
+							<tr>
+								<td class="site-center-add-td1">手机号码:</td>
+								<td><input type="text" placeholder="请输入您的手机号" class="site-center-add-txt" id="site_td5"></td>
+								<td class="site-center-add-td7">您输入的手机号码不存在</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td class="site-center-add-td3"><button class="site-center-add-btn" id="site_btn">保存</button></td>
+							</tr>
+						</table>
+					</div>	
+			<!-- 默认地址栏 -->
+						<div class="site-center-right-bottom">
+							<ul class="site-center-right-bottom-ul" id="site_ul">
+								<li class="site-center-right-bottom-li1">
+									<h4>收货人</h4>
+									<h4>所在地区</h4>
+									<h4>详细地址</h4>
+									<h4>联系方式</h4>
+									<h4>操作</h4>
+								</li>
+								<li class="site-center-right-bottom-li2">
+									<h4 class="site-center-right-botom-h">琴酒</h4>
+									<h4>上海市-浦东新区</h4>
+									<h4>佳林路100号上海师范大学</h4>
+									<h4>86-18******05</h4>
+									<h4><span><a href=''> 删除 </a></span>|<span><a href=''> 修改 </a></span></h4>
+									<h4 class="site-h_1"><span>默认地址</span></h4>
+								</li>
+								<li class="site-center-right-bottom-li2">
+									<h4 class="site-center-right-botom-h">朗姆</h4>
+									<h4>江苏省-无锡市</h4>
+									<h4>源兴路15号 无锡公共实训基地</h4>
+									<h4>86-13******06</h4>
+									<h4><span><a href=''> 删除 </a></span>|<span><a href=''> 修改 </a></span></h4>
+									<h4 class="site-h_1"><span>设为默认</span></h4>
+								</li>
+								<li class="site-center-right-bottom-li2">
+									<h4 class="site-center-right-botom-h">伏特加</h4>
+									<h4>上海市-黄埔区</h4>
+									<h4>金汇路1648弄32号202室</h4>
+									<h4>86-16******02</h4>
+									<h4><span><a href=''> 删除 </a></span>|<span><a href=''> 修改 </a></span></h4>
+								</li>
+								<li class="site-center-right-bottom-li2">
+									<h4 class="site-center-right-botom-h">贝尔摩得</h4>
+									<h4>上海市-浦东新区</h4>
+									<h4>金桥路325号金桥金融中心</h4>
+									<h4>86-15******01</h4>
+									<h4><span><a href=''> 删除 </a></span>|<span><a href=''> 修改 </a></span></h4>
+								</li>
+								<li class="site-center-right-bottom-li2">
+									<h4 class="site-center-right-botom-h">基尔</h4>
+									<h4>上海市-徐汇区</h4>
+									<h4>徐特路552号上海山大学院</h4>
+									<h4>86-17******03</h4>
+									<h4><span><a href=''> 删除 </a></span>|<span><a href=''> 修改 </a></span></h4>
+								</li>
+							</ul>
+					<div class="site-bottom_page">
+							<div class="site-page">
+								<div class="site-page_up">上一页</div>
+								<ul class="site-page_btn">
+									<li class="site_page_1">1</li>
+									<li>2</li>
+									<li>3</li>
+									<li>...</li>
+									<li>5</li>
+								</ul>
+								<div class="site-page_down">下一页</div>
+								<p class="site-page-p">共5页 &nbsp;到第</p>
+								<div class="site-page-num">1</div>
+								<p class="site-page-p-1">页</p>
+								<div class="site-page-ok">确定</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div >
+       <iframe src="floor-one.html" width="100%" height="210px" scrolling="no" frameborder="0"></iframe>
+	</div>
+</body>
+<script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+<script type="text/javascript" src="js/china_area.js"></script>
+<script type="text/javascript" src='js/address.js'></script>
+</html>
