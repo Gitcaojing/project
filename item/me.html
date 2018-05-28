@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+		<link rel="stylesheet" href="//at.alicdn.com/t/font_652468_id5smti4m5597ldi.css"/>
+		<link rel="stylesheet" href="css/me.css" />
+		<title>我</title>
+	</head>
+	<body>
+		<div class="me-box">
+			<div class="me-top">
+				<div class="me-sign">签到</div>
+				<div class="me-head">
+					<div><span class="iconfont icon-touxiang" id="weiyi"></span></div>
+					<div id="userdiv">
+						<a href="login.html">登录</a>
+						<span>\</span>
+						<a href="register.html">注册</a>
+					</div>
+				</div>
+				<div class="me-history">
+					<div class="collect">
+						<span class="iconfont icon-xingxing"></span>
+						<p>收藏</p>
+					</div>
+					<div class="history">
+						<span class="iconfont icon-lishijilu"></span>
+						<p>历史</p>
+					</div>
+				</div>
+			</div>
+			<div class="me-center">
+				<ul>
+					<li>
+						<span>我的消息</span>
+						<p></p>
+						<a href="###" class="iconfont icon-xiangyou1"></a>
+					</li>
+					<li>
+						<span>我的钱包</span>
+						<small></small>
+						<a href="###" class="iconfont icon-xiangyou1"></a>
+					</li>
+					<li>
+						<span>金币商城</span>
+						<p></p>
+						<a href="###" class="iconfont icon-xiangyou1"></a>
+					</li>
+					<li>
+					    <span>阅读时长</span>
+						<p></p>
+						<a href="###" class="iconfont icon-xiangyou1"></a>
+					</li>
+					<li>
+						<span>免流量看新闻</span>
+						<p></p>
+						<a href="###" class="iconfont icon-xiangyou1"></a>
+					</li>
+					<li>
+						<span>投诉反馈</span>
+						<a href="###" class="iconfont icon-xiangyou1"></a>
+					</li>
+					<li>
+						<span>设置</span>
+						<a href="###" class="iconfont icon-xiangyou1"></a>
+					</li>
+				</ul>
+			</div>
+			<div class="me-floor">
+				<ul>
+		    		<li id="index">首页</li>
+		    		<li>视频</li>
+		    		<li>推荐</li>
+		    		<li class="bottom-lis">我</li>
+		    	</ul>
+			</div>
+		</div>
+	</body>
+	<script src="js/jquery-3.3.1.js"></script>
+	<script type="text/javascript">
+		var html = document.getElementsByTagName('html')[0];
+		let rem = document.documentElement.clientWidth/10
+        html.style.fontSize = rem+'px'
+        $('#index').click(function(){
+        	window.location = 'index.html'
+        })
+        let a = sessionStorage.getItem('cur')
+        function ojbk(){
+        	if(a!=null){
+        		$('#weiyi').removeClass('iconfont icon-touxiang')
+        		$('#weiyi').addClass('oop')
+        		$('.oop').css({
+        			'background-image':'url(img/index/tou.jpg)',
+        			'background-size':'100% 100%'
+        		})
+        		var url = location.search
+        		let b = url.substring(4)
+        		$('#userdiv').html(b)
+        	}else{
+        		$('#weiyi').removeClass('oop')
+        		$('#weiyi').addClass('iconfont icon-touxiang')
+        		$('#userdiv').html('<a href="login.html">登录</a><span>\</span><a href="register.html">注册</a>')
+        	}
+        }
+        ojbk()
+	</script>
+</html>

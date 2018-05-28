@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+		<title>分类</title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+				list-style: none;
+				text-decoration: none;
+				box-sizing: border-box;
+			}
+			html,body{
+				width:100%;
+				height:100%;
+			}
+			.classify-box{
+				width:100%;
+				height:100%;
+			}
+			.classify-top{
+				width:100%;
+				height: 1.3125rem;background: red;
+				position: relative;
+			}
+			.classify-top h2{
+				width:100%;
+				height:100%;
+				line-height:1.3125rem;
+				text-align: center;
+				font-size:0.5rem;
+			}
+			.classify-top span{
+				display: block;
+				width:1.25rem;
+				height:100%;
+				line-height:1.3125rem;
+				text-align: center;
+				font-size:0.4375rem;
+				position: absolute;
+				top: 0;
+				right: 0;
+			}
+			.classify-top span a{
+				line-height:1.3125rem;
+			}
+			.classify-hot{
+				width:100%;
+			}
+			.got-hot{
+				width:100%;
+				height:0.9375rem;
+				line-height:0.9375rem;
+				padding-left:0.5rem;
+				font-size:0.5rem;
+				color:#B8B8B8;
+				border-bottom: 1px solid #B8B8B8;
+			}
+			.classify-hot>div:nth-of-type(2){
+				width:100%;
+				height:4.125rem;
+				padding:0.4375rem 0.3125rem;
+			}
+			.hot-ul{
+				width:100%;
+				height:100%;
+			}
+			li{
+				float: left;
+				width:1.5625rem;
+				height:0.84375rem;
+				border:1px solid #BBBBBB;
+				font-size:0.5rem;
+				margin-left:0.38rem;
+				margin-bottom:0.36rem;
+			}
+			li:hover{
+				background:red;
+			}
+			li:hover a{
+				color:white;
+			}
+			 .lis{
+				margin-left: 0!important;
+			}
+			.bottom-li{
+				margin-bottom: 0!important;
+			}
+			a{
+				display: block;
+				width:100%;
+				height:100%;
+				color:#BBBBBB;
+				line-height:0.84375rem;
+				text-align: center;
+			}
+			.classify-all>div:nth-of-type(2){
+				width:100%;
+				height:9.375rem;
+				padding:0.4375rem 0.3125rem;
+			}
+			.all-ul{
+				width:100%;
+				height:100%;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="classify-box">
+			<div class="classify-top">
+				<h2>知事</h2>
+				<span><a href="javascript:history.go(-1)">返回</a></span>
+			</div>
+			<div class="classify-hot">
+				<div class="got-hot">热门推荐</div>
+				<div>
+					<ul class="hot-ul"></ul>
+				</div>
+			</div>
+			<div class="classify-all">
+				<div class="got-hot">全部频道</div>
+				<div>
+					<ul class="all-ul"></ul>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="js/classify.js"></script>
+	<script type="text/javascript">
+		var html = document.getElementsByTagName('html')[0];
+		let rem = document.documentElement.clientWidth/10
+        html.style.fontSize = rem+'px'
+        var hotul = document.getElementsByClassName('hot-ul')[0];
+        var allul = document.getElementsByClassName('all-ul')[0];
+        obj.hot.forEach(function(item,index){
+        	let li = document.createElement('li')
+        	li.innerHTML = '<a href="###">'+item+'</a>'
+        	hotul.appendChild(li)
+        })
+        obj.all.forEach(function(item,index){
+        	let li = document.createElement('li')
+        	li.innerHTML = '<a href="###">'+item+'</a>'
+        	allul.appendChild(li)
+        })
+        var hotli = hotul.children;
+        var allli = allul.children;
+        function addlister(obj,property,propertytwo){
+        	obj.classList.add(property,propertytwo);
+        }
+        addlister(hotli[0],'lis');addlister(hotli[5],'lis');
+        addlister(hotli[10],'lis','bottom-li');addlister(hotli[11],'bottom-li');
+        addlister(hotli[12],'bottom-li');
+        addlister(allli[30],'lis','bottom-li');
+        addlister(allli[31],'bottom-li');
+        addlister(allli[0],'lis');addlister(allli[5],'lis');addlister(allli[10],'lis');
+        addlister(allli[15],'lis');addlister(allli[20],'lis');addlister(allli[25],'lis');
+        document.getElementsByTagName('li').addEventListener('mouseover',function(){
+        	this.style.backgroundColor = 'red';
+        	this.style.color = ''
+        })
+	</script>
+</html>

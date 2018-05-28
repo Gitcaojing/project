@@ -1,0 +1,218 @@
+	*{
+				margin: 0;
+				padding: 0;
+				list-style: none;
+				text-decoration: none;
+				box-sizing: border-box;
+			}
+			html,body{
+				width:100%;
+				height:100%;
+			}
+			.login-box{
+				width:100%;
+				height:100%;
+			}
+			.login-top{
+				width:100%;
+				height: 1.3125rem;background: red;
+				position: relative;
+			}
+			.login-top>span{
+				display: block;
+				width:2.1875rem;
+				height:100%;
+				position: absolute;
+				top: 0;left: 0;
+				z-index: 10;
+			}
+			.login-top>span>a{
+				display: block;
+				width:100%;
+				height:100%;
+				line-height:1.3125rem;
+				text-align: center;
+				color:#333;
+				font-size:0.625rem;
+				font-weight: 600;
+			}
+			.login-top h5{
+				width:100%;
+				height:100%;
+				line-height:1.3125rem;
+				text-align: center;
+				font-size:0.5rem;
+			}
+			.login-center{
+				padding: 0.5rem 1.25rem;
+				width:100%;
+				height:13.125rem;
+			}
+			.login-center-user{
+				width:100%;
+				height:1.375rem;
+				position: relative;
+				border-bottom:1px solid #818181;
+			}
+			.login-center-user span:nth-of-type(1){
+				display: block;
+				width:1.1875rem;
+				height:100%;
+				line-height:1.375rem;
+				text-align: center;
+				font-size:0.75rem;
+				position: absolute;
+				top: 0;left: 0;
+			}
+			.login-center-user input{
+				width:5rem;
+				height:100%;
+				position: absolute;
+				top: 0;left: 1.3rem;
+				border: none;
+				outline: none;
+			}
+			.login-center-user span:nth-of-type(2){
+				display: block;
+				width:1.1875rem;
+				height:100%;
+				line-height:1.375rem;
+				text-align: center;
+				font-size:1rem;
+				position: absolute;
+				top: 0;right: 0;
+				z-index: 10;
+				display: none;
+			}
+			.login-center-password input{
+				width:4.3rem;
+			}
+			.login-center-password span:nth-of-type(2){
+				right:0.71875rem;
+			}
+			.login-center-password span:nth-of-type(3){
+				display: block;
+				width:0.75rem;
+				height:100%;
+				line-height:1.375rem;
+				text-align: center;
+				font-size:0.75rem;
+				position: absolute;
+				top: 0;
+				right: 0;
+				z-index: 10;
+				display: none;
+			}
+			.login-center-button{
+				width:100%;
+				height:1.125rem;
+				background: red;
+				line-height:1.125rem;
+				text-align: center;
+				color: white;
+				font-size:0.4375rem;
+				margin-top:0.5rem;
+			}
+			.login-center-forget{
+				width:100%;
+				height:0.6875rem;
+				margin-top:0.1rem;
+			}
+			.login-center-forget span{
+				display: block;
+				width:2.0625rem;
+				height:0.6875rem;
+				float: right;
+				border-bottom:1px solid red;
+				line-height:0.6875rem;
+				text-align: center;
+				font-size:0.4375rem;
+			}
+			.login-center-register{
+				width: 100%;
+				height:0.625rem;
+			}
+			.login-center-register a{
+				display: block;
+				width:3.125rem;
+				height:0.625rem;
+				background:#f0eff5;
+				margin: 0.625rem auto;
+				position: relative;
+			}
+			.login-center-register a span:nth-of-type(1){
+				display:block;
+				width:2rem;
+				height:100%;
+				line-height:0.625rem;
+				text-align:right;
+				font-size:0.3rem;
+				position: absolute;
+				top: 0;left: 0;
+				color:#979699;
+			}
+			.login-center-register a span:nth-of-type(2){
+				display:block;
+				width:1.1875rem;
+				height:100%;
+				line-height:0.625rem;
+				text-align:left;
+				font-size:0.3rem;
+				position: absolute;
+				top: 0;right: 0;
+				color:#979699;
+			}
+			.login-floor{
+				width:100%;
+				height:3.3125rem;
+				position: relative;
+			}
+			.login-floor::before{
+				content: " ";
+				width:100%;
+				height:1px;
+				background:#919191;
+				position: absolute;
+				top: 0.28125rem;left: 0;
+			}
+			.login-floor div:nth-of-type(1){
+				width:2.625rem;
+				height:0.625rem;
+				font-size:0.375rem;
+				line-height:0.625rem;
+				text-align: center;
+				color:#919191;
+				position: absolute;
+				top: 0;
+				left:37%;
+				z-index:10;
+				background: white;
+			}
+			.login-floor div:nth-of-type(2){
+				width:100%;
+				height:2.6875rem;
+			    padding:0 0.625rem;
+			    position: absolute;
+			    bottom: 0;left: 0;
+			}
+			ul{
+				width:100%;
+				height:100%;
+			}
+			li{
+				width:33.3333%;
+				height:100%;
+				float: left;
+				line-height:2.6875rem;
+				text-align: center;
+				font-size:1.8rem!important;
+				color:#4cafea;
+			}
+			.li-two{
+				color:#3fb135;
+			}
+			.li-san{
+				color:#e04d69;
+				font-size:1.7rem!important;
+			}
+		
