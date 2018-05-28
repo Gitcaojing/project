@@ -1,0 +1,278 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+.bgcolor(@nav:red){
+    background: @nav;
+    -webkit-background:@nav;
+    -o-background:@nav;
+}
+.color(@meco:pink){
+    color: @meco;
+    -webkit-background:@meco;
+    -o-background:@meco;
+}
+html{
+    width:100%;
+    height:100%;
+}
+body,.login-box{
+    width:100%;
+    height:100%;
+    font-size:14px;
+}
+.login-header{
+    width:100%;
+    height:1.4375rem;
+    border-bottom:1px solid #BBBBBB;
+    background:#F9F9F9;
+    position: relative;
+  >span:nth-of-type(1){
+      display: inline-block;
+             width:0.625;
+             height:100%;
+             line-height:1.4375rem;
+             text-align: left;
+             font-size:1rem;
+  }
+    >span:nth-of-type(2){
+        display: inline-block;
+                width:100%;
+                height:100%;
+                font-size:0.5625rem;
+                text-align: center;
+                line-height:1.4375rem;
+                position: absolute;
+                top:0;
+                left: 0;
+                .color(#616161);
+    }
+}
+.login-section{
+                width:100%;
+                height:16.27rem;
+                .login-tit{
+                    width:100%;
+                    height:1.4375rem;
+                    >ul{
+                        width:100%;
+                        height:100%;
+                        >li{
+                            width:50%;
+                            height:100%;
+                            float: left;
+                            >a{
+                                display: block;
+                                font-size:0.4375rem;
+                                color: #333333;
+                                width:100%;
+                                height:100%;
+                                padding:0.2rem  0.9rem ;
+                                line-height:1.03125rem;
+                                text-align: center;
+                                border-bottom:1px solid #d7d7d7;
+                            }
+                        }
+                    }
+                }
+                >.login-input{
+                    width:100%;
+                    height:14.8325rem;
+                    padding:0  0.625rem;
+                    >.login-user{
+                        width:100%;
+                        height:1.5rem;
+                        padding:0 0.15625rem;
+                        border-bottom:1px solid #d7d7d7;
+                        position: relative;
+                        >div{
+                            width:1.875rem;
+                            height:100%;
+                            font-size:0.4275;
+                            line-height:1.5rem;
+                            position: absolute;
+                            top: 0;
+                            left:0.15625rem;
+                            z-index: 10;
+                        }
+                        >input{
+                            width:8.4375rem;
+                            padding:0 0.9375rem 0  1.875rem;
+                            position: absolute;
+                            top:0.5rem;
+                            left:0.21875rem;
+                            border: none;
+                            outline: none;
+                        }
+                        >i{
+                            display:inline-block;
+                            width:0.6875rem;
+                            height:0.6875rem;
+                            position: absolute;
+                            top:0.375rem;
+                            right: 0;
+                            font-size:0.6875rem;
+                            display: none;
+                        }
+                    }
+                    >.login-pwd{
+                        width:100%;
+                        height:1.5rem;
+                        padding:0 0.15625rem;
+                        border-bottom:1px solid #d7d7d7;
+                        position: relative;
+                        >div{
+                            width:1.875rem;
+                            height:100%;
+                            font-size:0.4275;
+                            line-height:1.5rem;
+                            position: absolute;
+                            top: 0;
+                            left:0.15625rem;
+                            z-index: 10;
+                        }
+                        >input{
+                            width:8.4375rem;
+                            padding:0 0.9375rem 0  1.875rem;
+                            position: absolute;
+                            top:0.5rem;
+                            left:0.21875rem;
+                            border: none;
+                            outline: none;
+                        }
+                         >i:nth-of-type(1){
+                            display:inline-block;
+                            width:0.6875rem;
+                            height:0.6875rem;
+                            position: absolute;
+                            top:0.375rem;
+                            right:0.8rem;
+                            font-size:0.6875rem;
+                            display: none;
+                         }
+                        >i:nth-of-type(2){
+                            display:inline-block;
+                            width:0.6875rem;
+                            height:0.6875rem;
+                            position: absolute;
+                            top:0.375rem;
+                            right: 0;
+                            font-size:0.6875rem;
+                        }
+                    }
+                    >.login-btn{
+                        width:100%;
+                        height:1.2777rem;
+                        margin-top:1.03125rem;
+                        cursor: pointer;
+                        >button{
+                            width:100%;
+                            height:100%;
+                            .bgcolor(#eeeeee);
+                            line-height:1.2777rem;
+                            text-align: center;
+                            border: none;
+                            outline: none;
+                            font-size:0.4375rem;
+                            .color(#848689);
+                        }
+                    }
+                    >.login-btns{
+                        width:100%;
+                        height:1.2777rem;
+                        margin-top:0.375rem;
+                        cursor: pointer;
+                        >button{
+                            width:100%;
+                            height:100%;
+                            .bgcolor(white);
+                            line-height:1.2777rem;
+                            border:1px solid red;
+                            text-align: center;
+                            outline: none;
+                            .color(red);
+                            font-size:0.4375rem;
+                        }
+                    }
+                    >.login-forget{
+                        width:100%;
+                        height:1.2777rem;
+                        margin-top:20px;
+                        >div{
+                            float: left;
+                        }
+                        >div:nth-of-type(1){
+                            width:50%;
+                            height:100%;
+                            >span:nth-of-type(1){
+                                display:inline-block;
+                                width:0.625rem;
+                                height:100%;
+                                line-height:1.2777rem;
+                                font-size:0.4375rem;
+                                text-align: center;
+                            }
+                            >span:nth-of-type(2){
+                                line-height:1.2777rem;
+                                font-size:0.4375rem;
+                            }
+                        }
+                        >div:nth-of-type(2){
+                            width:50%;
+                            height:100%;
+                            >span:nth-of-type(1){
+                                display:inline-block;
+                                width:1.425rem;
+                                height:100%;
+                                line-height:1.2777rem;
+                                font-size:0.4375rem;
+                                text-align: right;
+                            }
+                            >span:nth-of-type(2){
+                                line-height:1.2777rem;
+                                font-size:0.4375rem;
+                            }
+                        }
+                    }
+                    >.login-QQ{
+                        width:100%;
+                        height:5.5rem;
+                        padding-top:2rem;
+                        >div:nth-of-type(1){
+                            width:100%;
+                            height:1.25rem;
+                            >span{
+                                display: block;
+                                width:2.9125rem;
+                                height:100%;
+                                text-align: center;
+                                line-height:1.25rem;
+                                margin: 0 auto;
+                                .bgcolor(white);
+                                .color(#bfbfbf);
+                            }
+                        }
+                        >div:nth-of-type(2){
+                            width:100%;
+                            height:1.25rem;
+                            >span{
+                                display: block;
+                                width:0.625rem;
+                                height:100%;
+                                margin: 0 auto;
+                            }
+                            >.icon-qq:before{
+                                display: block;
+                                width:100%;
+                                height:100%;
+                                font-size:0.625rem;
+                                .color(#bfbfbf);
+                                line-height:1.25rem;
+                            }
+                        }
+                    }
+                }
+            }

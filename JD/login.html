@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width = device-width ,initial-scale = 1.0,user-scalable = no" />
+		<link rel="stylesheet" href="//at.alicdn.com/t/font_639314_c75ttpjmdu545cdi.css
+" />
+	    <link rel="stylesheet" href="css/login.css" />
+		<!--<link rel="stylesheet/less" href="js/login.less" />
+		<script type="text/javascript" src="js/less.min.js"></script>-->
+		<title>login</title>
+	</head>
+	<body>
+		<div class="login-box">
+			<div class="login-header">
+				<span class="iconfont icon-xiangzuoxi return"></span>
+			    <span>京东登录</span>
+			</div>
+		    <div class="login-section">
+		    	<div class="login-tit">
+		    		<ul>
+		    			<li id="userlogin"><a href="###">账号密码登录</a></li>
+		    			<li id="paslogin"><a href="###">短信验证码登录</a></li>
+		    		</ul>
+		    	</div>
+		        <div class="login-input">
+		        	<div class="login-user">
+		        		<div>账号</div>
+		        		<input type="text" autofocus="autofocus" placeholder="用户名/邮箱/已验证手机" autocomplete="off" id="user"/>
+		        	    <i class="iconfont icon-shanchu zh"></i>
+		        	</div>
+		        	<div class="login-pwd">
+		        		<div>密码</div>
+		        		<input type="password" autofocus="autofocus" id="pas" autocomplete="off"/>
+		        		<i class="iconfont icon-shanchu mm"></i>
+		        		<i class="iconfont icon-biyan"></i>
+		        	</div>
+		        	<div class="login-verification">
+		        		<p>账号和密码不正确</p>
+		        	</div>
+		            <div class="login-btn">
+		            	<button>登&nbsp;&nbsp;&nbsp;录</button>
+		            </div>
+		            <div class="login-btns">
+		            	<button>一键登录</button>
+		            </div>
+		            <div class="login-forget">
+		            	<div>
+		            		<span class="iconfont icon-iconset0114"></span>
+		            		<span>忘记密码</span>
+		            	</div>
+		            	<div>
+		            		<span class="iconfont icon-shouji"></span>
+		            		<span>手机快速注册</span>
+		            	</div>
+		            </div>
+		            <div class="login-QQ">
+		            	<div>
+		            		<span>其他登录方式</span>
+		            	</div>
+		            	<div>
+		            		<span class="iconfont icon-qq"></span>
+		            	</div>
+		            </div>
+		        </div>
+		    </div>
+		</div>
+	</body>
+	<script src="js/zepto.js"></script>
+	<script type="text/javascript">
+		 var html = document.getElementsByTagName('html')[0]
+		 html.style.fontSize = document.documentElement.clientWidth/10+'px'
+		 function $(obj){
+		 	return document.querySelector(obj)
+		 }
+		 user = $('#user');zh = $('.zh');mm = $('.mm');pas = $('#pas');
+		 if (/Android [4-6]/.test(navigator.appVersion)) {
+			   window.addEventListener('resize', function () {
+			     if (document.activeElement.tagName === 'INPUT' || document.activeElement.tagName === 'TEXTAREA') {
+			        window.setTimeout(function () {
+			          document.activeElement.scrollIntoViewIfNeeded()
+			        }, 0)
+			      }
+			   })
+			}
+		function addmonitor(obj,num,objin,st){
+			switch(num){
+				case 1:
+				    obj.onfocus = function(){
+						objin.style.display = st
+					};
+				case 0:
+				    obj.onblur = function(){
+						objin.style.display = st
+					};
+				case 2:
+				    obj.touchStart= function(){
+						this.value(' ');
+					};
+			}
+		}
+		addmonitor(user,1,zh,'block')
+		addmonitor(user,0,zh,'none')
+		addmonitor(pas,1,mm,'block')
+		addmonitor(pas,0,mm,'none')
+		$('#userlogin>a').style.borderBottom = '2px solid red';
+		$('.return').addEventListener('touchstart',function(){
+			window.location = 'index.html'
+		})
+	</script>
+</html>
